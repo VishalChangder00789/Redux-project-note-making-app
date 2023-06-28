@@ -1,0 +1,46 @@
+.NotesContainer {
+  display: flex;
+  /* border: 2px solid blue; */
+  height: 100%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+  overflow-y: auto;
+  width: 100%;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  /* border: 2px solid blue; */
+  background: rgba(88, 88, 88, 0.116);
+  background: none;
+}
+
+::-webkit-scrollbar-track {
+  /* box-shadow: inset 0 0 5px grey; */
+  border-radius: 5px;
+  background: none;
+}
+
+/* ::-webkit-scrollbar-button {
+  border: 2px solid green;
+} */
+
+::-webkit-scrollbar-thumb {
+  /* border: 2px solid greenyellow; */
+  background: rgb(105, 105, 105);
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 550px) {
+  .NotesContainer {
+    display: flex;
+    /* border: 2px solid blue; */
+    height: 100%;
+    width: 98%;
+    overflow-y: auto;
+    flex-direction: row;
+    /*flex-wrap: wrap;*/
+  }
+}

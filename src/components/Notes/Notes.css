@@ -1,0 +1,94 @@
+.NotesOuter {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2%;
+  height: 40%;
+  background: rgba(255, 255, 0, 0.571);
+  border-radius: 8px;
+  flex-basis: 17%;
+  margin-bottom: 2%;
+  padding: 2%;
+  justify-content: space-around;
+}
+
+.NotesHeading {
+  display: flex;
+  /* border: 2px solid blueviolet; */
+  margin-top: 5%;
+  width: 100%;
+  letter-spacing: 5px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  border-radius: 5px;
+  height: 15%;
+  /* border: 2px solid red; */
+  background: rgba(232, 239, 136, 0.349);
+  overflow-y: auto;
+}
+
+.NotesData {
+  /* border: 2px solid green; */
+  margin-top: 2%;
+  width: 100%;
+  height: 50%;
+  background: rgba(128, 128, 128, 0.304);
+  display: flex;
+  padding-left: 1%;
+  flex-wrap: wrap;
+  overflow-y: auto;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  /* border: 2px solid blue; */
+  background: rgba(255, 14, 14, 0.116);
+  background: none;
+}
+
+::-webkit-scrollbar-track {
+  /* box-shadow: inset 0 0 5px grey; */
+  border-radius: 5px;
+  background: rgba(68, 68, 68, 0.228);
+}
+
+/* ::-webkit-scrollbar-button {
+  border: 2px solid green;
+} */
+
+::-webkit-scrollbar-thumb {
+  /* border: 2px solid greenyellow; */
+  background: rgb(105, 105, 105);
+  border-radius: 5px;
+}
+
+.NotesBottomHolder {
+  display: flex;
+  height: 10%;
+  width: 100%;
+  /* border: 2px solid red; */
+  justify-content: space-between;
+}
+
+.NotesTime {
+  position: relative;
+  top: 5%;
+}
+
+.delete {
+  display: flex;
+  width: 10%;
+  height: 100%;
+}
+
+@media screen and (max-width: 550px) {
+  .NotesOuter {
+    display: flex;
+    flex-direction: column;
+    height: 40%;
+    background: rgba(255, 255, 0, 0.571);
+    border-radius: 8px;
+    flex-basis: 80%;
+    justify-content: space-around;
+  }
+}
